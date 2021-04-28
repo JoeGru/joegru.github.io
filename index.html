@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .nav ul {
+    <head>
+        <title>Some CSS stuffs</title>
+        <style>
+            
+            body {
+                margin: 1rem;
+                background-color: chocolate;
+            }
+            nav {
+                border-bottom: 2px solid #ff9100;
+                margin: inherit;
+                
+            }
+            div {
+                border-bottom: 2px solid transparent;
+                display: inline-block;
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+                margin: inherit;
+                font-family: Calibri;
+                transition: ease 50ms;
+                width: 10rem;
+            }
+            div:hover {
+                border-bottom: 2px solid #fbff00;
+                background-color: rgb(192, 132, 2);
+                width: 12.5rem;
+            }
+            span {
+                color: #fbff00;
+;
+            }
+            #main_content {
+                border: solid black;
+                border-width: 0.1rem;
+                background-image: url(https://wallpapercave.com/wp/OP9q4EZ.jpg);
+                background-color: transparent;
+                background-repeat: repeat;
+                background-position: center;
+                background-size: cover;
+                width: 90%;
+                height: 1000px;
+                border-radius: 5px;
+            }
+            p {
+                font-size: x-large;
+                font-family: Calibri;
+                color: #fbff00;
+            }
+            .nav ul {
             *zoom: 1;
             list-style: none;
             margin: 0;
             padding: 0;
-            background: #333;
+            background: rgb(247, 193, 15);
             border-radius: 2rem;
         }
 
@@ -35,17 +79,17 @@
             padding: 10px 20px;
             line-height: 1.2em;
             color: #fff;
-            border-left: 1px solid #595959;
+            border-left: 1px solid #745617;
         }
 
         .nav a:hover {
             text-decoration: none;
-            background: #595959;
+            background: #dfc014;
             border-radius: 2rem;
         }
 
         .nav li ul {
-            background: #273754;
+            background: #e2b00c;
         }
 
         .nav li ul li {
@@ -79,34 +123,37 @@
             opacity: 1;
             filter: alpha(opacity=100);
         }
-    </style>
-    <title>Personal page</title>
-</head>
-
-<body>
-    <nav class="nav">
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-                <ul>
-                    <li><a href="#">Early work</a></li>
-                    <li><a href="#">Recent work</a></li>
-                    <li><a href="#">What I am working on</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">About me</a>
-                <ul>
-                    <li><a href="#">Personal details</a></li>
-                    <li><a href="#">Career</a></li>
-                </ul>
-            </li>
-        </ul>
-
-    </nav>
-</body>
-
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                    <ul>
+                        <li><a href="#">Early work</a></li>
+                        <li><a href="#">Recent work</a></li>
+                        <li><a href="#">What I am working on</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About me</a>
+                    <ul>
+                        <li><a href="#">Personal details</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="main_content">
+            <p>
+                This is some nice text just to see what it looks like
+            </p>
+        </div>
+    </body>
 </html>
+
+
