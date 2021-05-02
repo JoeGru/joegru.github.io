@@ -1,154 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Some CSS stuffs</title>
-        <style>
-            
-            body {
-                margin: 1rem;
-                background-color: chocolate;
-            }
-            nav {
-                border-bottom: 2px solid #ff9100;
-                margin: inherit;
-                
-            }
-            div {
-                border-bottom: 2px solid transparent;
-                display: inline-block;
-                text-align: center;
-                font-size: 25px;
-                font-weight: bold;
-                margin: inherit;
-                font-family: Calibri;
-                transition: ease 50ms;
-                width: 10rem;
-            }
-            span {
-                color: #fbff00;
-;
-            }
-            #main_content {
-                border: solid black;
-                border-width: 0.1rem;
-                background-image: url(https://wallpapercave.com/wp/OP9q4EZ.jpg);
-                background-color: transparent;
-                background-repeat: repeat;
-                background-position: center;
-                background-size: cover;
-                width: 90%;
-                height: 1000px;
-                border-radius: 5px;
-            }
-            p {
-                font-size: x-large;
-                font-family: Calibri;
-                color: #fbff00;
-            }
-            .nav ul {
-            *zoom: 1;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            background: rgb(247, 193, 15);
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox NAV</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+        body {
+            margin: 2rem;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
         }
-
-        .nav ul:before,
-        .nav ul:after {
-            content: "";
-            display: table;
+        nav {
+            border-bottom: 2px solid #ff0000;
+            margin: inherit;
         }
-
-        .nav ul:after {
-            clear: both;
+        .container { 
+                display: flex;
+                justify-content:center;
         }
-
-        .nav ul>li {
-            float: left;
-            position: relative;
+        div {
+            border-bottom: 2px solid transparent;
+            display: inline-block;
+            font-family: Zen Dots;
+            text-align: justify;
+            font-size: 20px;
+            font-weight: bold;
+            margin: inherit;
         }
-
-        .nav a {
-            display: block;
-            padding: 10px 20px;
-            line-height: 1.2em;
-            color: #fff;
-            border-left: 1px solid #745617;
+        div:hover {
+            border-bottom: 2px solid #ff0000;
         }
-
-        .nav a:hover {
-            text-decoration: none;
-            background: #dfc014;
-            border-radius: 2rem;
-        }
-
-        .nav li ul {
-            background: #e2b00c;
-        }
-
-        .nav li ul li {
-            width: 200px;
-        }
-
-        .nav li ul a {
-            border: none;
-        }
-
-        .nav li ul a:hover {
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        .nav li ul {
-            position: absolute;
-            left: 0;
-            top: 36px;
-            z-index: 1;
-            visibility: hidden;
-            opacity: 0;
-            filter: alpha(opacity=0);
-            -webkit-transition: 200ms ease;
-            -moz-transition: 200ms ease;
-            -o-transition: 200ms ease;
-            transition: 200ms ease;
-        }
-
-        .nav ul>li:hover ul {
-            visibility: visible;
-            opacity: 1;
-            filter: alpha(opacity=100);
-        }
-        </style>
-    </head>
-    <body>
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                    <ul>
-                        <li><a href="#">Early work</a></li>
-                        <li><a href="#">Recent work</a></li>
-                        <li><a href="#">What I am working on</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About me</a>
-                    <ul>
-                        <li><a href="#">Personal details</a></li>
-                        <li><a href="#">Career</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div id="main_content">
-            <p>
-                This is some nice text just to see what it looks like
-            </p>
-        </div>
-    </body>
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="Nav1">Home</div>
+        <div class="Nav1">About</div>
+        <div class="Nav1">News</div>
+    </nav>
+</body>
 </html>
-
-
