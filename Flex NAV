@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox NAV</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+        body {
+            margin: 2rem;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+        }
+        nav {
+            border-bottom: 2px solid #ff0000;
+            margin: inherit;
+        }
+        .container { 
+                display: flex;
+                justify-content:center;
+        }
+        div {
+            border-bottom: 2px solid transparent;
+            display: inline-block;
+            font-family: Zen Dots;
+            text-align: justify;
+            font-size: 20px;
+            font-weight: bold;
+            margin: inherit;
+        }
+        div:hover {
+            border-bottom: 2px solid #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="Nav1">Home</div>
+        <div class="Nav1">About</div>
+        <div class="Nav1">News</div>
+    </nav>
+</body>
+</html>
